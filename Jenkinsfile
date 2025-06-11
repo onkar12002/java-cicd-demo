@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+    maven 'maven latest' // name must match Jenkins config
+}
+
     environment {
         main = "${env.GIT_BRANCH}".replaceAll('origin/', '')
     }
