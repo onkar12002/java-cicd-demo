@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Branch detected: ${main}"
                 echo 'Cloning source code...'
-                git branch: "${main}", url: 'https://github.com/YOUR_USERNAME/YOUR_REPO.git'
+                git branch: "${main}", url: 'https://github.com/onkar12002/java-cicd-demo.git'
             }
         }
 
